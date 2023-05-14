@@ -1,0 +1,17 @@
+.Item {
+    a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+    }
+    nav {
+        display: grid;
+        padding-left: 20px;
+        a {
+            font-size: 14px;
+            font-weight: normal;
+            color: gray;
+        }
+    }
+}
