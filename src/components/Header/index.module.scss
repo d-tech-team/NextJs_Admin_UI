@@ -1,5 +1,70 @@
 .Header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+
+  &__navbar {
+    svg {
+      font-size: 30px;
+    }
+  }
+
+  &__search {
     display: flex;
-    height: 80px;
     align-items: center;
+
+    input {
+      height: 35px;
+      border: 1px solid #ccc;
+      font-size: 13px;
+
+      &:focus {
+        outline: none;
+        border: 0;
+        box-shadow: none;
+      }
+    }
+
+    svg {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+  }
+
+  &__end {
+    display: flex;
+    align-items: center;
+    &__menu {
+      display: none;
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      position: absolute;
+      top: 70px;
+      border: 1px solid #eee;
+      li {
+        list-style: none;
+        font-size: 13px;
+        margin-top: 5px;
+      }
+    }
+
+    img {
+      &:hover {
+        display: block !important;
+      }
+    }
+
+    svg {
+      font-size: 20px;
+      margin-right: 20px;
+    }
+    span {
+      font-size: 13px;
+      margin-right: 5px;
+    }
+  }
 }

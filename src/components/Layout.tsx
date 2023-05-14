@@ -8,10 +8,10 @@ export default function Layout({ children }) {
         <>
             <Container fluid>
                 <Row>
-                    <Col md={2}>
+                    <Col md={2} className="pe-0">
                         <Sidebar />
                     </Col>
-                    <Col md={10}>
+                    <Col md={10} className="ps-0">
                         <Header />
                         {children}
                         <Footer/>
