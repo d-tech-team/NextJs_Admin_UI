@@ -1,17 +1,37 @@
 .Item {
+  padding: 5px 20px;
+  &__link {
+    width: 100%;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    color: black;
+    padding: 10px 20px;
+  }
+  nav {
+    display: none;
+    padding-left: 20px;
     a {
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 500;
-        color: black;
+      margin-top: 10px;
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: normal;
+      color: black;
     }
+  }
+
+  &:hover {
     nav {
-        display: grid;
-        padding-left: 20px;
-        a {
-            font-size: 14px;
-            font-weight: normal;
-            color: gray;
-        }
+      display: grid;
     }
+
+    &__link {
+      color: #eee;
+      background-color: black;
+    }
+  }
 }

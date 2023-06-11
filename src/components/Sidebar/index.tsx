@@ -5,7 +5,7 @@ import Item from './Item'
 
 const menu = [
   {
-    label: 'Home',
+    label: 'Dashboard',
     href: '#',
     icon: <House />,
     items: [
@@ -66,12 +66,12 @@ export interface IAppProps {
 export default function App(props: IAppProps) {
   return (
     <div className={styles.Sidebar}>
-      <div className={styles.Sidebar__brand}>logo</div>
+      <div className={styles.Sidebar__brand}><b>Dashboard</b> <sup className='ml-2'>lctiendat</sup></div>
       <div className={styles.Sidebar__menu}>
         {Array.isArray(menu) && menu.map((item,i) => (
           <Item key={i} menu={item} />
         ))}
       </div>
-    </div>
+    </div> 
   );
 }

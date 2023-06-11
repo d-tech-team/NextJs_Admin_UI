@@ -17,20 +17,32 @@
     align-items: center;
 
     input {
-      height: 35px;
+      height: 45px;
       border: 1px solid #ccc;
       font-size: 13px;
+      max-width: 100%;
+      width: 450px;
+      border-radius: 15px;
 
       &:focus {
         outline: none;
         border: 0;
         box-shadow: none;
+        border-bottom: 1px solid #eee;
       }
     }
 
     svg {
       margin-left: 10px;
       font-size: 20px;
+    }
+
+    &__show {
+      display: block;
+    }
+
+    &__hidden {
+      display: none;
     }
   }
 
